@@ -157,7 +157,7 @@ def FileLoader (load_directory,portion,pause):
    source=os.path.join(os.path.abspath(os.curdir),'store')
    d_source=os.path.join(source,load_directory)
    
-   db = cx_Oracle.connect('BIS', 'ReUAb_YnBV0W_Vn', 'GFBIS_UTAG')
+   db = cx_Oracle.connect('BIS', '%%%%%%', 'GFBIS_UTAG')
    cursor = db.cursor()
    
    #Вставляем в базу информацию о том в какие дни велась загрузка в виде партиций, для дальнейшего ускорения сбора статистики
